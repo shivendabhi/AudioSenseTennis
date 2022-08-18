@@ -17,9 +17,9 @@ import jetson.inference
 
 #parses the command line
 parser = argparse.ArgumentParser()
-parser.add_argument("--network", type=str, default="tennis-balls_model", help="Pre-trained model on tennis balls, only for balls not on a tennis court(Trained in limited environments)"
-parser.add_argument("--input_location",type=str, default="/dev/video0", help="Location of the camera/video file(The default is the USB camera)"
-parser.add_argument("--output_location", type=str, default="display://0", help="Location of the output(my_video.mp4 for a file output)"
+parser.add_argument("--network", type=str, default="tennis-balls_model", help="Pre-trained model on tennis balls, only for balls not on a tennis court(Trained in limited environments)")
+parser.add_argument("--input_location", type=str, default="/dev/video0", help="Location of the camera/video file(The default is the USB camera)")
+parser.add_argument("--output_location", type=str, default="display://0", help="Location of the output(my_video.mp4 for a file output)")
 
 
 #exits if there are any issues with the arguments
@@ -31,11 +31,11 @@ except:
 	sys.exit(0)
 
 #gets and assigns the arguments from the CLI
-net = jetson.inference.detectNet(args.network, threshold=0.5
+net = jetson.inference.detectNet(args.network, threshold=0.5)
 camera  = jetson.utils.videoSource(args.input_location)
 display = jetson.utils.videoOutput(args.output_location)
 
-while display.IsStreaming()
+while display.IsStreaming():
 	img = camera.Capture()
 	detections = net.Detect(img)
 	display.Render(img)
