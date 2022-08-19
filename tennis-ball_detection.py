@@ -30,7 +30,7 @@ except:
 	sys.exit(0)
 
 #gets and assigns the arguments from the CLI
-net = jetson.inference.detectNet(argv=["--model=~/nvidia-project/tennis-ball_model.onnx", "--labels=~/nvidia-project/labels.txt", "--input_blob=input_0", "--output-cvg=scores", "--output-bbox=boxes"], threshold=0.3)
+net = jetson.inference.detectNet(argv=["--model=tennis-ball_model.onnx", "--labels=labels.txt", "--input_blob=input_0", "--output-cvg=scores", "--output-bbox=boxes"], threshold=0.3)
 camera  = jetson.utils.videoSource(args.input_location)
 display = jetson.utils.videoOutput(args.output_location)
 
