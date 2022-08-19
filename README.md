@@ -22,7 +22,7 @@ cd jetson-inference
 ```
 git clone https://github.com/shivendabhi/tennis-ball-detector
 ```
-5. Run the Docker container and mount the "tennis-ball-detector" folder(If you encounter a runtime error when launching the container, refer to this document to resolve the issue:[Link to Document](https://app.box.com/s/e0dy6dr651h6nxyel4nw81gf5v8a1f3r)
+5. Run the Docker container and mount the "tennis-ball-detector" folder(If you encounter a runtime error when launching the container, refer to this document to resolve the issue: [Link to Document](https://app.box.com/s/e0dy6dr651h6nxyel4nw81gf5v8a1f3r)
 ```
 docker/run.sh --volume ~/jetson-inference/tennis-ball-detector:/jetson-inference/tennis-ball-detector
 ```
@@ -33,7 +33,7 @@ python3 tennis-ball_detection.py
 ```
 At this point, the script will load the model included in the repository that was trained on numerous images of tennis balls(in limited environments). The initial setup for the model may take anywhere from 5-10 minutes, depending on how capable your hardware is. By default, a window will open on the desktop and show a live preview of the camera with the object detection. 
 
-After waiting 10-15 minutes after the script had been run and there is still no camera feed, as well as the desktop being frozen, refer to this document to resolve this issue : [Link to Document](https://app.box.com/s/3n6bezbn6ieadmd8rur0hgsp7eai4no6)
+After waiting 10-15 minutes after the script had been run and there is still no camera feed, as well as the desktop being frozen, refer to this document to resolve this issue: [Link to Document](https://app.box.com/s/3n6bezbn6ieadmd8rur0hgsp7eai4no6)
 
 ---
 ### Video Explanation
