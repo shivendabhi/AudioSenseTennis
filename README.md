@@ -1,7 +1,7 @@
 # Tennis Ball Detector
 This is a program that will detect a tennis ball that is in the frame of the camera and highlight it using the DetectNet Object Detection model, making it easier to see. The real world application of this would be using it at real tennis matches, to track and highlight the ball traveling at 60-120 mph across the tennis court. This would it tremendously easier for people with certain visual impairments to have a better viewing experience of tennis in a whole. This is also a very cost effective solution as it will work on already existing cameras at tennis event venues, it just needs to be processed in real time and broadcasted on a special channel for the viewers to use. 
 
-![Image of tennis Balls being detected]([https://app.box.com/s/nmizgsx8yw2fofkgi1llgkn49h4k6dfu](https://app.box.com/file/998850304124?s=nmizgsx8yw2fofkgi1llgkn49h4k6dfu))
+![Image of tennis Balls being detected](https://app.box.com/s/nmizgsx8yw2fofkgi1llgkn49h4k6dfu)
 ## The Algorithm
 The program utilizes DetectNet, which is a object detection model which is a convolutional neural network. They are especially good at capturing and recognizing patterns in photos. A convolutional neural network is made up of multiple convolutional layers. Each layer is composed of multiple filters that classify one pixel at a time. When on top of one another, they can split the scene into multiple sections of different patterns. By doing so, it is able to localize and pick out specific objects from the scene. The more layers a network has, the more compleicated and specialized objects are able to be detected.
 
