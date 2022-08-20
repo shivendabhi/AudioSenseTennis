@@ -37,4 +37,4 @@ After waiting 10-15 minutes after the script had been run and there is still no 
 
 ---
 ### Video Explanation
-[Tennis Ball Detector Explanation and Walkthrough](youtube.com)
+[Tennis Ball Detector Explanation and Walkthrough](https://youtu.be/OToqQ7yxvfQ)
