@@ -21,15 +21,15 @@ cd jetson-inference
 ```
 4. Clone this project into the "jetson-inference" folder
 ```
-git clone https://github.com/shivendabhi/tennis-ball-detector
+git clone https://github.com/shivendabhi/AudioSenseTennis
 ```
-5. Run the Docker container and mount the "tennis-ball-detector" folder(If you encounter a runtime error when launching the container, refer to this document to resolve the issue: [Link to Document](https://app.box.com/s/e0dy6dr651h6nxyel4nw81gf5v8a1f3r)
+5. Run the Docker container and mount the "AudioSenseTennis" folder(If you encounter a runtime error when launching the container, refer to this document to resolve the issue: [Link to Document](https://app.box.com/s/e0dy6dr651h6nxyel4nw81gf5v8a1f3r)
 ```
-docker/run.sh --volume ~/jetson-inference/tennis-ball-detector:/jetson-inference/tennis-ball-detector
+docker/run.sh --volume ~/jetson-inference/AudioSenseTennis:/jetson-inference/AudioSenseTennis
 ```
-6. Navigate into the "tennis-ball-detector" folder and run the "tennis-ball_detection.py" script. Make sure that your USB camera is installed under /dev/video0
+6. Navigate into the "AudioSenseTennis" folder and run the "tennis-ball_detection.py" script. Make sure that your USB camera is installed under /dev/video0
 ```
-cd tennis-ball-detector
+cd AudioSenseTennis
 python3 tennis-ball_detection.py
 ```
 At this point, the script will load the model included in the repository that was trained on numerous images of tennis balls(in limited environments). The initial setup for the model may take anywhere from 5-10 minutes, depending on how capable your hardware is. By default, a window will open on the desktop and show a live preview of the camera with the object detection. 
